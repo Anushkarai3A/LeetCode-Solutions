@@ -9,12 +9,12 @@ class Solution {
             if(l_max < r_max){
                 l++;
                 l_max = Math.max(l_max, height[l]);
-                result += l_max - height[l];
+                result = result + l_max - height[l];
             }
             else{
                 r--;
                 r_max = Math.max(r_max, height[r]);
-                result += r_max - height[r];
+                result = result + r_max - height[r];
             }
         }
         return result;
